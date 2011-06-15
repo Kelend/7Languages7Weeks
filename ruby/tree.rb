@@ -14,7 +14,7 @@ class Tree
       @node_name = key
       @children = []
       value.each do |k, v|
-        @children.push Tree.new({ k => v })
+        @children << Tree.new({ k => v })
       end
     end  
   end
